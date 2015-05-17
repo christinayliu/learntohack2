@@ -30,8 +30,8 @@
 
 .text_h {
     padding: 15% 0;
-    font-size: 6.0em;
-    font-weight: 100;
+    font-size: 6.0rem;
+    font-weight: 200;
     color:white;
 }
 
@@ -40,13 +40,15 @@
     color: #fff;
     display: inline-block;
     font-size: 2.1rem;
-    font-style: normal;
-    font-weight: 100;
+    font-style: italic;
+    font-weight: 600;
     padding: 0;
     letter-spacing: 7px;
 }
 
-.text_h2 {font-size: 2.4rem; font-weight: 100;margin-bottom: 4%;}
+.text_h2 {font-size: 1.8rem; font-weight: 200;margin-bottom: 4%;}
+
+.text_h3 {font-size: 1.4rem; font-weight: 300;margin-bottom: 4%;}
 
 .span_h2 {font-weight: 300;color: #F15D24;}
 
@@ -59,9 +61,11 @@
     font-size: 7rem;
     display: block;
 }
-.card-content a {color: #F15D24;}
+/*.card-content a {color: #F15D24;}
 
-.card-content a:hover {color: #F15D24;}
+.card-content a:hover {color: #F15D24;}*/
+
+
 
 #work, #team{background: rgb(247, 247, 247);}
 
@@ -79,6 +83,7 @@ nav ul a {
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
     overflow: hidden;
+    font-style: italic;
 }
 
 .cd-headline.type .cd-words-wrapper::after {
@@ -216,7 +221,7 @@ nav ul a {
     .text_h {
         padding: 4% 0;
         font-size: 5em;
-        font-weight: 100;
+        font-weight: 200;
         color: white;
     }
 }
