@@ -1,0 +1,28 @@
+{
+  "name": "learntohack2",
+  "version": "1.0.0",
+  "homepage": "https://github.com/christinayliu/learntohack2",
+  "authors": [
+    "russelltrupiano <russelltrupiano@gmail.com>"
+  ],
+  "description": "Learn To Hack 2 Information page",
+  "main": "public/index.html",
+  "keywords": [
+    "learn",
+    "to",
+    "hack",
+    "michigan",
+    "hackers"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parse": "~1.4.2"
+  }
+}
