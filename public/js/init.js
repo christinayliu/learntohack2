@@ -1,7 +1,9 @@
 (function($){
   $(function(){
 
-	Parse.initialize("<app-Id>", "<javascript-key>");
+	Parse.initialize("FIethHzO5p3u5vFeMXoA1Lb58FDGR96oLEW55xmK", "Smwi656sy9lT4XYbdBsWN7SVDvC8wgXnmaLYjngb");
+
+	var ENTER_KEY = 13;
 
     $('.button-collapse').sideNav();
 	$('.scrollspy').scrollSpy();
@@ -272,6 +274,7 @@
 		emailField.removeClass("valid");
 		emailField.removeClass("invalid");
 		emailField.removeClass("active");
+		emailField.blur();
 		emailIcon.removeClass("active");
 		emailLabel.removeClass("active");
 	}
@@ -292,12 +295,22 @@
 		console.log("Invalid email");
 	}
 
-	emailBtn.click(function() {
+	function validateAndSendForm() {
 		if (emailField.hasClass("valid")) {
 			saveEmail(emailField.val());
 		} else {
 			showErrorMessage(emailField.val());
 		}
+	}
+
+	emailField.on('keyup', function(event) {
+		if (event.keyCode == ENTER_KEY) {
+			validateAndSendForm();
+		}
+	});
+
+	emailBtn.click(function() {
+		validateAndSendForm();
 	});
 
 
