@@ -1,7 +1,7 @@
 (function($){
   $(function(){
 
-	Parse.initialize("<app-Id>", "<javascript-key>");
+	Parse.initialize("2Q8duK0ymVGU7CW8MPhvmuafZMJLxk1Zzi3Frs4j", "2XMFoTwdSc5NJbSH8fl2Fa1GELIi8vECa24PmaIq");
 
     $('.button-collapse').sideNav();
 	$('.scrollspy').scrollSpy();
