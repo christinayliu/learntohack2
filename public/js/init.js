@@ -1,7 +1,7 @@
 (function($){
   $(function(){
 
-	Parse.initialize("FIethHzO5p3u5vFeMXoA1Lb58FDGR96oLEW55xmK", "Smwi656sy9lT4XYbdBsWN7SVDvC8wgXnmaLYjngb");
+	Parse.initialize("<app-Id>", "<javascript-key>");
 
 	var ENTER_KEY = 13;
 
