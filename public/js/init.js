@@ -280,6 +280,7 @@
 		Parse.Cloud.run('saveEmail', { email: email }, {
 			success: function(email) {
 		    	resetEmailForm();
+		    	Materialize.toast('Thanks! We\'ll be reaching out as more information becomes available!', 4000);
 		  	},
 		  	error: function(error) {
 		  		console.log(error);
@@ -298,6 +299,7 @@
 			showErrorMessage(emailField.val());
 		}
 	});
+
 
  }); // end of document ready
 })(jQuery); // end of jQuery name space
