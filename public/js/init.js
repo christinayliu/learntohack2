@@ -3,6 +3,8 @@
 
 	Parse.initialize("<app-Id>", "<javascript-key>");
 
+	var ENTER_KEY = 13;
+
     $('.button-collapse').sideNav();
 	$('.scrollspy').scrollSpy();
 
@@ -272,6 +274,7 @@
 		emailField.removeClass("valid");
 		emailField.removeClass("invalid");
 		emailField.removeClass("active");
+		emailField.blur();
 		emailIcon.removeClass("active");
 		emailLabel.removeClass("active");
 	}
@@ -292,12 +295,22 @@
 		console.log("Invalid email");
 	}
 
-	emailBtn.click(function() {
+	function validateAndSendForm() {
 		if (emailField.hasClass("valid")) {
 			saveEmail(emailField.val());
 		} else {
 			showErrorMessage(emailField.val());
 		}
+	}
+
+	emailField.on('keyup', function(event) {
+		if (event.keyCode == ENTER_KEY) {
+			validateAndSendForm();
+		}
+	});
+
+	emailBtn.click(function() {
+		validateAndSendForm();
 	});
 
 
