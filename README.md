@@ -12,3 +12,8 @@ Learn To Hack 2 Information Page
 4. Replace Parse keys at top of `public/js/init.js`
 5. In the project root run `bower install`
 6. Deploy to Parse server `parse deploy`
+7. 
+
+to do list:
+
+Implement facebook image thumbnail and other bits of meta data
